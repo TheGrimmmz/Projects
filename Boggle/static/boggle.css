@@ -1,0 +1,57 @@
+
+img {
+  display: block;
+  width: 500px;
+  margin: auto;
+  padding: 15px;
+}
+
+.board {
+  margin: auto;
+  border: solid 3px black;
+  border-radius: 20px;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 400%;
+  background-color: wheat;
+  padding: 10px;
+}
+
+.board td {
+  text-align: center;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.msg {
+  padding: 1em;
+}
+
+.msg.ok {
+  text-align: center;
+  color: white;
+  background-color: green;
+}
+
+.msg.err {
+  color: white;
+  background-color: tomato;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+  font-family: monospace;
+}
+
+form {
+  margin: auto;
+  text-align: center;
+}
+
+td {
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: floralwhite;
+}

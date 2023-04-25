@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title%}Pet Adoption{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Pet Adoption</h1>
+<div class="row pets justify-content-center">
+    {% for pet in pets %}
+    <div class="col-3">
+        <img class="img-thumbnail" src="{{ pet.photo_url }}">
+            <a class="row justify-content-center" href="{{ url_for('edit_pet', pet_id=pet.id) }}"><b>{{ pet.name }}</b></a>
+        <p class="row justify-content-center">{% if pet.available %}<b>is available!</b>{% endif %}</p>
+    </div>
+    {% else %}
+    <div class="col-12 text-center">No pets</div>
+    {% endfor %}
+    <div id="home_add" class="d-grid gap-2 col-12 mx-auto">
+        <a href="{{ url_for('add_pet') }}" class="col-3 btn btn-dark text-center">Add Pet</a>
+    </div>
+</div>
+{% endblock %}

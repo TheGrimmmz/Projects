@@ -1,0 +1,36 @@
+body {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    background-image: url('../static/black_and_white.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#home_add {
+    display: flex;
+    justify-content: center;
+}
+
+#add_buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 7px 7px 7px black;
+}
+
+input[type="checkbox"] {
+    accent-color: black;
+}
+
+#image {
+    margin: 0 0 7px 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 7px 7px 7px black;
+}

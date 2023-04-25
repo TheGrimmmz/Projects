@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title%}Edit Pet{% endblock %}
+
+{% block content %}
+<div class="containor">
+    <h1 class="text-center"><i><u>Edit {{ pet.name }}</u></i></h1>
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            {% if pet.photo_url %}
+                <img id="image" src="{{ pet.photo_url }}" class="img-fluid">
+            {% endif %}
+            <h2 class="row justify-content-center"><i><u>Update</u></i></h2>
+            <form class="form" method="POST">
+                {{ form.hidden_tag() }}
+                {% for field in form if field.widget.input_type != 'hidden' %}
+                <div class="form-group text-center">
+                    <i><b>{{ field.label }}</b></i>
+                    {{ field(class_="form-control") }}
+                    <span>
+                        {% for err in field.errors %}
+                        <small class="for-text text-danger">
+                            {{ err }}
+                        </small>
+                        {% endfor %}
+                    </span>
+                </div>
+                {% endfor %}
+                <div id="add_buttons">
+                    <button class="col-5 btn btn-dark"><i><b>Edit</b></i></button>
+                    <a href="/" class=" col-5 btn btn-outline-dark"><i><b>Cancel</b></i></a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

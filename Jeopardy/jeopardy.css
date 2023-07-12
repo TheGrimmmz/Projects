@@ -1,0 +1,79 @@
+/* some colors you may find useful:
+  #115ff4
+  #060ce9
+  #28a200
+  #8d2ab5
+  #74119c
+*/
+
+@font-face {
+  font-family: 'jeopardy';
+  src: url(Korinna-Regular.otf);
+}
+
+@font-face {
+  font-family: 'jep logo';
+  src: url(gyparody-hv.ttf);
+}
+
+body {
+  background-color: #060ce9;
+}
+
+header{
+  font-size: 50px;
+  font-family: 'jep logo';
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  margin: 15px;
+}
+
+div {
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+button {
+  font-family: 'jeopardy';
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+#jeopardy{
+  margin: auto;
+  background-color: #060ce9;
+  color: white;
+  text-align: center;
+  border-collapse: collapse;
+  font-size: 9pt;
+  margin-top: 20px;
+}
+
+#jeopardy th, #jeopardy td {
+  border: solid 1px white;
+  width: 10rem;
+  padding: 1em;
+}
+
+th {
+  font-family: 'jeopardy';
+  text-transform: uppercase;
+}
+
+td {
+  font-family: 'jeopardy';
+  height: 9em;
+  border: 2px solid white;
+}
+
+td:hover {
+  cursor: pointer;
+}
